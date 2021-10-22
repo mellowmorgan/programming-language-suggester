@@ -1,36 +1,16 @@
 body{
   background-image: url('cover-artwork.jpg');
+  background-size: cover;
+  background-position: center;
   height:auto;
 }
-.heading{
-  width:95%;
-  margin-left:auto;
-  margin-right:auto;
-  padding:1rem;
-  color:white;
-  margin-bottom:2rem;
-  margin-top:1rem;
-  background-color: rgba(124, 170, 255, 0.8);
-}
-#result-div{
-  height:4rem;
-  width:95%;
-  margin-left:auto;
-  margin-right:auto;
-  padding:1rem;
-  color:white;
-  margin-bottom:1rem;
-  margin-top:1rem;
-  background-color: rgba(124, 170, 255, 0.8);
-  visibility:hidden;
-}
-
 
 .container{
   margin-top:3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   
 }
+
 form{
   margin:auto;
 }
@@ -39,22 +19,20 @@ h3{
   text-align: center;
   
 }
+
 h4{
   text-align: center;
 
-}
-
-button{
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 }
 label{
   margin-left:1rem;
   font-weight:450;
 }
+
 input{
   margin-right: .5rem;
 }
+
 .question{
   width:90%;
   margin-left:auto;
@@ -66,17 +44,47 @@ input{
 } 
 
 .space-button{
+  display: flex;
+  justify-content: center;
   width:90%;
   margin-left:auto;
   margin-right:auto;
   margin-bottom:1rem;
   margin-top:1rem;
-  
-
 }
+
 button{
+  border-radius: 0 !important;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1rem;
+  width:300px;
+  margin-top: 1rem;
+}
+
+.heading{
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1rem;
+  color:white;
+  margin-bottom:2rem;
+  margin-top:1rem;
+  background-color: rgba(103, 150, 238, 0.75);
+}
+
+#result-div{
+
+  height:auto;
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1rem;
+  color:white;
+  margin-bottom:1rem;
+  margin-top:1rem;
+  background-color: rgba(103, 150, 238, 0.75);
+  visibility:hidden;
 }
 
 

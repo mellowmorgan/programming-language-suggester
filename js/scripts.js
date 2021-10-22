@@ -129,7 +129,7 @@ $(document).ready(function(){
     }
     else{
       //make them resubmit if they didn't answer a question
-      $("#result-div").css('visibility', 'visible')
+      $("#result-div").css('visibility', 'visible');
       $("#result").text("You must answer all questions. Please resubmit.");
       
     }
