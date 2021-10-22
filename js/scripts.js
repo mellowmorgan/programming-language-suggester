@@ -113,8 +113,7 @@ $(document).ready(function(){
       }
       else if (result==="ruby"){
         $("#result-div").css('visibility', 'visible')
-        $("#result").text("The best first language for you is Ruby!");
-        
+        $("#result").text("The best first language for you is Ruby!");   
       }
       else if (result==="cSharp"){
         $("#result-div").css('visibility', 'visible')
@@ -123,9 +122,7 @@ $(document).ready(function(){
       else{
         $("#result-div").css('visibility', 'visible')
         $("#result").text("It's a draw! Please try again.");
-       
       }
-  
     }
     else{
       //make them resubmit if they didn't answer a question
