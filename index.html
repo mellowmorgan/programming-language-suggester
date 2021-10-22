@@ -11,105 +11,104 @@
 <body>
   <div class="container">
     <div class="heading">
-    <h3>Programming Language Suggester</h3>
-    <h4>Find out which programming language is best for you!</h4> 
-    <h4>Take the quiz below.</h4>
-  </div>
+      <h3>Programming Language Suggester</h3>
+      <h4>Find out which programming language is best for you!</h4> 
+      <h4>Take the quiz below.</h4>
+    </div>
     <form id="quiz">
       <div class="question">
-      <h5>Question 1: Would you like your programming language  to be: </h5>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question-1" value="ruby"> 
-        Very simple and easy to understand.</label>
+        <h5>Question 1: Would you like your programming language  to be: </h5>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-1" value="ruby"> 
+            Very simple and easy to understand.</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-1" value="c#"> 
+            A little challenging and difficult to understand at first.</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-1" value="python"> 
+            Conscise but self-explanatory.</label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question-1" value="c#"> 
-        A little challenging and difficult to understand at first.</label>
+      <div class="question">
+        <h5>Question 2: How old and established would you like your language to be? </h5>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-2" value="c#"> 
+            Very old and well-established.</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-2" value="python"> 
+            A bit new but most are familiar with it.</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-2" value="ruby"> 
+            Very new and innovative, even if it means many don't know it.</label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question-1" value="python"> 
-        Conscise but self-explanatory.</label>
+      <div class="question">
+        <h5>Question 3: Which line of code makes more sense to you for printing x? </h5>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-3" value="c#"> 
+            Console.WriteLine(x);</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-3" value="python">
+            print(x)</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-3" value="ruby">
+            print x</label>
+        </div>
       </div>
-    </div>
-    <div class="question">
-      <h5>Question 2: How old and established would you like your language to be? </h5>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-2" value="c#"> 
-          Very old and well-established.</label>
+      <div class="question">
+        <h5>Question 4: Which website do you like best? </h5>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-4" value="ruby"> Airbnb (View <a href="https://www.airbnb.com/">here</a>)</label> 
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-4" value="python"> 
+            Instagram (View <a href="https://instagram.com/">here</a>)</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-4" value="c#">
+            Stack Overflow (View <a href="https://stackoverflow.com/">here</a>)</label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-2" value="python"> 
-          A bit new but most are familiar with it.</label>
+      <div class="question">
+        <h5>Question 5: Which list of companies would you like to work for? </h5>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-5" value="c#"> Microsoft, Intuit, Accenture, Wayfair, Sysco. </label> 
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-5" value="ruby"> GoodReads, AirBnb, Github, Twitch, Twitter.</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-5" value="python"> Intel, NASA, Pixar, Netflix, Facebook, Spotify.</label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-2" value="ruby"> 
-          Very new and innovative, even if it means many don't know it.</label>
+      <div class="space-button">  
+        <button type="submit" class="btn btn-dark btn-lg">Find out my result!</button>
       </div>
-    </div>
-    <div class="question">
-      <h5>Question 3: Which line of code makes more sense to you for printing x? </h5>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-3" value="c#"> 
-          Console.WriteLine(x);</label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-3" value="python">
-          print(x)</label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-3" value="ruby">
-          print x</label>
-      </div>
-    </div>
-  <div class="question">
-      <h5>Question 4: Which website do you like best? </h5>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-4" value="ruby"> Airbnb (View <a href="https://www.airbnb.com/">here</a>)</label> 
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-4" value="python"> 
-          Instagram (View <a href="https://instagram.com/">here</a>)</label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-4" value="c#">
-          Stack Overflow (View <a href="https://stackoverflow.com/">here</a>)</label>
-      </div>
-      </div>
-<div class="question">
-      <h5>Question 5: Which list of companies would you like to work for? </h5>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-5" value="c#"> Microsoft, Intuit, Accenture, Wayfair, Sysco. </label> 
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-5" value="ruby"> GoodReads, AirBnb, Github, Twitch, Twitter.</label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="question-5" value="python"> Intel, NASA, Pixar, Netflix, Facebook, Spotify.</label>
-      </div>
-    </div>
-    <div class="space-button">  
-      <button type="submit" class="btn btn-dark btn-lg">Find out my result!</button>
-    </div>
-        </form>
+    </form>
 
     <div id="result-div">
-    <h3 id="result"> 
-    </h3>
+      <h3 id="result"></h3>
     </div>
   </div>
 </body>
