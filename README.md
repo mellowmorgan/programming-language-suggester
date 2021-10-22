@@ -1,15 +1,19 @@
 # Passenger Counter
-By Morgan Waites.
+By Morgan Waites
+
 Quiz webpage to determine best first programming language.
 
 ## Technologies Used
 * HTML
 * CSS
 * Bootstrap
-* Javascript.
+* Javascript
 
 ## Description
 Quiz with five multiple choice questions. Result can be Python, Ruby, or C#.
+
+## Github Pages
+https://mellowmorgan.github.io/programming-language-suggester/
 
 ## Setup Instructions
 * Clone repository.
