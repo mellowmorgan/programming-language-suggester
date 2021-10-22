@@ -121,15 +121,17 @@ $(document).ready(function(){
         $("#result").text("The best first language for you is C#!");
       }
       else{
-        $("#result-div").show();
+        $("#result-div").show().delay(2000);
         $("#result").text("It's a draw! Please try again.");
+        $("#result-div").fadeOut('slow');
       }
   
     }
     else{
       //make them resubmit if they didn't answer a question
-      $("#result-div").show();
+      $("#result-div").show().delay(2000);
       $("#result").text("You must answer all questions. Please resubmit.");
+      $("#result-div").fadeOut('slow')
     }
     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
   });
