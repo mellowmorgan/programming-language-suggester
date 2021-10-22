@@ -1,3 +1,4 @@
+//returns programming language with most answers
 function getResult(count1, count2, count3){
   if (count1>count2 && count1>count3){
     return "python";
@@ -6,7 +7,7 @@ function getResult(count1, count2, count3){
     return "ruby";
   }
   else if (count3>count1 && count3>count2){
-    return "cSharp"
+    return "cSharp";
   }
   //account for possibility of 2 of each
   else {
@@ -53,6 +54,7 @@ $(document).ready(function(){
     else{
       nonAnswerCount++;
     }
+
     if (answer3==="python"){
       pythonCount++;
     }
@@ -65,18 +67,7 @@ $(document).ready(function(){
     else{
       nonAnswerCount++;
     }
-    if (answer3==="python"){
-      pythonCount++;
-    }
-    else if (answer3==="ruby"){
-      rubyCount++;
-    }
-    else if (answer3==="c#"){
-      cSharpCount++;
-    }
-    else{
-      nonAnswerCount++;
-    }
+
     if (answer4==="python"){
       pythonCount++;
     }
@@ -89,6 +80,7 @@ $(document).ready(function(){
     else{
       nonAnswerCount++;
     }
+    
     if (answer5==="python"){
       pythonCount++;
     }
@@ -122,14 +114,12 @@ $(document).ready(function(){
         $("#result-div").show();
         $("#result").text("It's a draw! Please try again.");
       }
+  
     }
     else{
       //make them resubmit if they didn't answer a question
       $("#result-div").show();
       $("#result").text("You must answer all questions. Please resubmit.");
-      
-    
     }
- 
-     });
+  });
 });
