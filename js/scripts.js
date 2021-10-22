@@ -23,18 +23,21 @@ $(document).ready(function(){
     let rubyCount=0;
     let cSharpCount=0;
     let nonAnswerCount=0; //for finding out if they didn't answer one
+
     //get answers/values of questions
     const answer1 = $("input:radio[name=question-1]:checked").val();
     const answer2 = $("input:radio[name=question-2]:checked").val();
     const answer3 = $("input:radio[name=question-3]:checked").val();
     const answer4 = $("input:radio[name=question-4]:checked").val();
     const answer5 = $("input:radio[name=question-5]:checked").val();
+
     //clear checked radio buttons on submit
     $("input:radio[name=question-1]:checked").prop('checked', false);
     $("input:radio[name=question-2]:checked").prop('checked', false);
     $("input:radio[name=question-3]:checked").prop('checked', false);
     $("input:radio[name=question-4]:checked").prop('checked', false);
     $("input:radio[name=question-5]:checked").prop('checked', false);
+
     //count the answers
     if (answer1==="python"){
       pythonCount++;
@@ -106,16 +109,16 @@ $(document).ready(function(){
       const result = getResult(pythonCount, rubyCount, cSharpCount);
       if (result==="python"){
         $("#result-div").show();
-        $("#result").text("The best language for you is Python!");
+        $("#result").text("The best first language for you is Python!");
       }
       else if (result==="ruby"){
         $("#result-div").show();
-        $("#result").text("The best language for you is Ruby!");
+        $("#result").text("The best first language for you is Ruby!");
         
       }
       else if (result==="cSharp"){
         $("#result-div").show();
-        $("#result").text("The best language for you is C#!");
+        $("#result").text("The best first language for you is C#!");
       }
       else{
         $("#result-div").show();
@@ -128,8 +131,11 @@ $(document).ready(function(){
       $("#result-div").show();
       $("#result").text("You must answer all questions. Please resubmit.");
     }
-   this.scrollToBottom();
-   
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
   });
  
 });
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
