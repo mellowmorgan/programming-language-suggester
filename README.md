@@ -1,4 +1,4 @@
-# Passenger Counter
+# Programming Language Suggester
 By Morgan Waites
 
 Quiz webpage to determine best first programming language.
